@@ -1,0 +1,5 @@
+catboost_info/
+
+data/raw_supply_chain.csv
+data/processed_supply_chain.csv
+data/supply_chain_dataset1.csv
