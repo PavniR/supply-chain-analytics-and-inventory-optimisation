@@ -20,7 +20,7 @@ The final solution provides:
 click here to access deployed web application:
 #### [Dashboard & Inventory Optimizer web application](https://supply-chain-analytics-dash.streamlit.app/)
 
-[DEMO OF APPLICATION](dash-demo.gif)
+![DEMO OF APPLICATION](dash-demo.gif)
 
 The deployed dashboard supports interactive operational reporting through:
 
