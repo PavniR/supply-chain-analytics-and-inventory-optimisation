@@ -60,7 +60,7 @@ This enables supply chain managers to quickly identify inventory issues, focus o
 
 #### Information about dataset used:
 The project begins with a raw supply chain dataset containing approximately **91,000 transactional records**. Rather than querying the raw dataset directly, the data was transformed into multiple analytical datasets, each serving a specific purpose within the application.
-#### **1. `raw_supply_chain`**
+1. `raw_supply_chain`
 <details>
 The primary analytical dataset used for business intelligence and executive reporting.
 
@@ -77,7 +77,7 @@ This table powers the executive dashboard and SQL analytics.
 </details>
 ---
 
-#### **2. `inventory_optimization`**
+2. `inventory_optimization`
 <details>
 A feature-engineered dataset created specifically for inventory decision support.
 
@@ -94,7 +94,7 @@ This dataset powers the interactive Inventory Optimizer page.
 </details>
 ---
 
-#### **3. `forecast_results`**
+3. `forecast_results`
 <details>
 An experimental dataset generated during the demand forecasting stage.
 
@@ -106,7 +106,9 @@ It contains:
 
 Although demand forecasting was explored as part of the analytical workflow, it was not included in the deployed dashboard because its predictive performance was not considered sufficiently reliable for operational decision-making due to limitations of dataset. The dataset and notebooks remain available in the repository for future experimentation and model improvements.
 </details>
+
 ---
+
 *Cloud Database Integration:*
 
 The three analytical datasets are automatically uploaded to a **PostgreSQL (Supabase)** database using the ETL pipeline.
@@ -199,7 +201,7 @@ Each SKU is automatically classified as:
 This enables users to quickly identify products requiring replenishment while highlighting excess inventory that may increase holding costs.
 </details>
 
-## 6. SQL Analytics
+#### 6. SQL Analytics
 <details>
 Processed datasets were stored in PostgreSQL (Supabase), enabling the dashboard to query live analytical data instead of static CSV files.
 
@@ -213,7 +215,7 @@ SQL was used to calculate:
 - Inventory distribution
 </details>
 
-## 7. Interactive Dashboard
+#### 7. Interactive Dashboard
 <details>
 The Streamlit application provides an executive overview of supply chain performance through an interactive dashboard.
 
@@ -230,7 +232,7 @@ Features include:
 Because the dashboard reads directly from PostgreSQL, updated data is immediately reflected after each ETL refresh.
 </details>
 
-## 8. Automated ETL Pipeline
+#### 8. Automated ETL Pipeline
 <details>
 To eliminate manual database updates, a Python ETL pipeline was developed.
 
