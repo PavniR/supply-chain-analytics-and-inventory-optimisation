@@ -134,7 +134,6 @@ Key preprocessing included:
 - Duplicate checks
 - Inventory metric generation
 </details>
----
 
 #### 2. Exploratory Data Analysis
 <details>
@@ -150,7 +149,6 @@ The analysis focused on:
 
 These insights formed the foundation for the later optimization stage.
 </details>
----
 
 #### 3. ABC-Pareto Analysis
 <details>
@@ -170,7 +168,6 @@ Business value:
 - Allocate inventory based on business importance
 - Improve procurement focus
 </details>
----
 
 #### 4. Demand Forecasting(Experimental)
 <details>
@@ -180,7 +177,6 @@ Although forecasting produced reasonable predictions, the accuracy was not consi
 
 The forecasting notebooks remain part of the repository for experimentation and future improvements.
 </details>
----
 
 #### 5. Inventory Optimization
 <details>
@@ -202,10 +198,9 @@ Each SKU is automatically classified as:
 
 This enables users to quickly identify products requiring replenishment while highlighting excess inventory that may increase holding costs.
 </details>
----
 
 ## 6. SQL Analytics
-</details>
+<details>
 Processed datasets were stored in PostgreSQL (Supabase), enabling the dashboard to query live analytical data instead of static CSV files.
 
 SQL was used to calculate:
@@ -216,8 +211,7 @@ SQL was used to calculate:
 - Regional analysis
 - SKU ranking
 - Inventory distribution
-<details>
----
+</details>
 
 ## 7. Interactive Dashboard
 <details>
@@ -235,7 +229,6 @@ Features include:
 
 Because the dashboard reads directly from PostgreSQL, updated data is immediately reflected after each ETL refresh.
 </details>
----
 
 ## 8. Automated ETL Pipeline
 <details>
@@ -250,7 +243,6 @@ The pipeline automatically:
 
 This enables future dashboard updates with a single command rather than manually importing CSV files.
 </details>
----
 
 ## Key Business Insights from this project:
 
