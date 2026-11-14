@@ -282,6 +282,10 @@ If validation or verification fails, the pipeline stops with an explicit error i
 - Operational focus can be directed toward underperforming facilities.
 - uncovered regional operations and contributions for better allocation.
 
+## Illustrative Business Impact Scenario
+
+This is a scenario estimate, not a realized savings claim. The inventory decision table flagged **195 of 250 warehouse-SKU positions as Overstock**, representing approximately **$737.6K in excess inventory value**. If reallocation or markdown actions reduced that exposure by 15%, the business could release approximately **$110.6K in working capital**. The estimate should be validated with holding-cost, markdown, and stockout data before being used for financial planning.
+
 ---
 
 ## Tools & Technologies used:
