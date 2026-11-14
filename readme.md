@@ -45,6 +45,20 @@ This enables supply chain managers to quickly identify inventory issues, focus o
 
 ---
 
+# Project Architecture
+
+```mermaid
+flowchart LR
+    A[Raw CSV datasets] --> B[Python ETL pipeline]
+    B --> C[Data validation]
+    C --> D[Staging PostgreSQL tables]
+    D --> E[Production PostgreSQL tables]
+    E --> F[Streamlit dashboard]
+    F --> G[Inventory recommendations]
+    F --> H[Downloadable reports]
+```
+---
+
 # Project Workflow
 
 1. Data Cleaning & Feature Engineering
