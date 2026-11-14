@@ -238,12 +238,16 @@ To eliminate manual database updates, a Python ETL pipeline was developed.
 
 The pipeline automatically:
 
-- Reads processed datasets
-- Validates data quality
-- Uploads refreshed tables to PostgreSQL
-- Verifies successful uploads
+- Reads the processed datasets
+- Validates required columns
+- Rejects missing values and duplicate rows
+- Checks non-negative demand, inventory, and sales measures
+- Validates inventory status categories
+- Uploads validated datasets to staging tables
+- Atomically swaps staging tables into production names
+- Verifies row counts after refresh
 
-This enables future dashboard updates with a single command rather than manually importing CSV files.
+If validation or verification fails, the pipeline stops with an explicit error instead of publishing incomplete data. This reduces the risk of partially refreshed tables while enabling future dashboard updates with a single command.
 </details>
 
 ## Key Business Insights from this project:
